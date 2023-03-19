@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  td {
+    border: 1px solid black;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+  }
+  
+  .unavailable {
+    background-color: #ccc;
+  }
+
+  .changeable {
+    background-color: #f69665;
+  }
+  
+  .centered-table {
+    width: 90%;
+    margin: 0 auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+  .centered-table td {
+    font-size: 1.5em; /* 이 속성을 추가하여 글자 크기를 1.5배로 늘립니다. */
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .centered-single-cell-table {
+    width: 30%;
+    margin: 0 auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+  .centered-single-cell-table td {
+    font-size: 2em; /* 이 속성을 추가하여 글자 크기를 2배로 늘립니다. */
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+  }
