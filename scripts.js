@@ -46,19 +46,6 @@ changeRowsCols.addEventListener('click', () => {
     }
   }
   
-
-  /*
-  for (let row = 0; row < rows; row++) {
-    const tableRow = document.createElement('tr');
-    table.appendChild(tableRow);
-    for (let col = 0; col < cols; col++) {
-      const tableCell = document.createElement('td');
-      tableRow.appendChild(tableCell);
-    }
-  }
-  */
-  
-
   //tableContainer에 생성한 테이블을 담는다.
   document.getElementById("tableContainer").appendChild(table);
   alreadyTable = true;
@@ -108,9 +95,12 @@ assignStudentsBtn.addEventListener('click', () => {
     return;
   }
 
+  // 학생 이름을 순서대로 하나씩 나타나게 하는 부분
   studentNames.forEach((name, index) => {
     if (index < availableCells.length) {
-      availableCells[index].textContent = name;
+      setTimeout(() => {
+        availableCells[index].textContent = name;
+      }, index * 800); // 500ms 간격으로 학생 이름이 나타납니다.
     }
   });
 });
